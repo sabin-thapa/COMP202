@@ -1,0 +1,21 @@
+int ArrayBST::min(){
+	int currentIndex=0;
+	while(element[getLeftChild(currentIndex)]!=NULL){
+	//	currentIndex = getLeftChild(currentIndex);
+		currentIndex = 2*currentIndex+1;
+		
+
+	}
+		return (element[currentIndex]);	
+}
+
+
+int ArrayBST::max(){
+	int currentIndex=0;
+	while(element[getRightChild(currentIndex)]!=NULL){
+		currentIndex = 2*currentIndex+2;
+		
+
+	}
+		return (element[currentIndex]);	
+}
